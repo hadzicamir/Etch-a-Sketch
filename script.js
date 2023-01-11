@@ -10,7 +10,7 @@ for(let i=0;i<16;i++){
     let square = document.createElement('div');
     square.classList.add('square');
     container.append(square);
-    for(let j=0;j<16;j++){
+    for(let j=1;j<16;j++){
         let square = document.createElement('div');
     square.classList.add('square');
     container.append(square);
