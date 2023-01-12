@@ -1,3 +1,8 @@
+body, html {
+    height: 100%;
+    display: grid;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,10 +12,10 @@ body {
 .container {
     width: 500px;
     height: 500px;
-    margin: auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    margin-top:3%;
+    margin: auto;
 }
 
 .square {
