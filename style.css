@@ -24,4 +24,6 @@ body {
     align-items: center;
 }
 
-
+.colored-square{
+    background-color: black;
+}

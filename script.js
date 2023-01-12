@@ -1,11 +1,8 @@
 let container = document.querySelector('.container');
-let containerWidth = container.offsetWidth;
-let containerHeight = container.offsetHeight;
-let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-let height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
-console.log(containerWidth, containerHeight);
-console.log(width, height)
+// let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+// let height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
 for(let i=0;i<16;i++){
     let square = document.createElement('div');
     square.classList.add('square');
@@ -17,6 +14,11 @@ for(let i=0;i<16;i++){
     }
 }
 
-
-
 document.body.appendChild(container);
+
+let squares = container.children;
+for(let i=0;i<squares.length;i++){
+    squares[i].addEventListener('mouseover', (e) => {
+        e.target.classList.add('colored-square')
+    });
+}
