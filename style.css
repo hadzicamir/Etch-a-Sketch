@@ -14,7 +14,7 @@ body {
     height: 500px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(20, 1fr);
     margin: auto;
 }
 
@@ -26,4 +26,12 @@ body {
 
 .colored-square{
     background-color: black;
+}
+
+.gridBtn {
+    width: 7em;
+    height: 2.5em;
+    margin: 0 auto;
+    margin-top: 1em;
+
 }
