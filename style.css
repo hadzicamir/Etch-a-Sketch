@@ -14,12 +14,12 @@ body {
     height: 400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(20, 1fr);
+    grid-template-columns: repeat(16, 1fr);
     /* margin: auto; */
 }
 
 .square {
-    border: 1px solid black;   
+    border: 0.1px solid rgb(82, 76, 76);   
     justify-content: center;
     align-items: center;
 }
