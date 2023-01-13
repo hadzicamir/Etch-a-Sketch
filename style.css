@@ -10,12 +10,12 @@ body {
 }
 
 .container {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
-    margin: auto;
+    /* margin: auto; */
 }
 
 .square {
@@ -32,6 +32,6 @@ body {
     width: 7em;
     height: 2.5em;
     margin: 0 auto;
-    margin-top: 1em;
+    margin-top: 2em;
 
 }

@@ -22,7 +22,8 @@ function colorSquares(){
     let squares = container.children;
     for(let i=0;i<squares.length;i++){
         squares[i].addEventListener('mouseover', (e) => {
-            e.target.classList.add('colored-square')
+            // e.target.classList.add('colored-square')
+            e.target.style.backgroundColor = getRandomColor();
         });
     }
 }
@@ -45,4 +46,10 @@ function setGrid(){
     colorSquares();
     }
 
+function getRandomColor() {
+  let firstColor = Math.floor(Math.random() * 255);
+  let secondColor = Math.floor(Math.random() * 255);
+  let thirdColor = Math.floor(Math.random() * 255);
+  return `rgb(${firstColor},${secondColor},${thirdColor})`;
+}
 
